@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0.1px;
+    background-color: #1d2535;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    background-color: rgb(61, 61, 196);
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+}
+
+.header__logo{
+    width: 150px;
+    background-color: inherit;
+    
+}
+
+.header__enlaces{
+    background-color: inherit;
+}
+
+.enlace{
+    background-color: inherit;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.hero{
+    
+    padding: 0 30px;
+    color: white;
+    
+}
+
+.hero__description{
+    width: 400px;
+    
+}
+
+.hero__titulo{
+    font-size: 40px;
+    
+}
+
+.hero__comprar{
+    margin-top:20px;
+    display: inline-block;
+    padding: 10px;
+    border:3px solid rgb(61, 61, 196);
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+    
+    
+}
+
+.hero__comprar:hover{
+    background-color: rgb(61, 61, 196);
+    color: white;
+}
+
+
+/*------------------------------------------------------------------------*/
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    margin: 180px auto 100px;
+    padding: 0.1px;
+    width: 1100px;
+    align-items: center;
+    
+}
+
+.slider{
+    
+    height: 350px;
+}
+
+.slider__container{
+    display: grid;
+    grid-template-columns: 50px 0.8fr 50px;
+    align-items: center;/*se alinea verticalmente*/
+    gap: 1em;/*espaciado*/
+    
+}
+
+.slider__body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    position: static;
+    display: grid;
+    
+    /*grid-template-columns: 1fr max-content;*/
+    align-items: center;
+    
+    
+}
+
+.slider__body--show{
+    opacity: 1;
+  
+}
+
+.slider__img{
+    width: 300px;
+    height: 350px;
+    border-radius: 5%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+
+.slider__arrow{
+    cursor: pointer; /*cada vez que pase el mouse aparece la manito*/
+    width: 90%;
+    color: white;
+}
+
+.slider__arrow:nth-of-type(2){
+    justify-self: end;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.acercaDe{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    text-align: center;
+    width: 1100px;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
+}
+.titulo-section{
+    padding: 10px;
+    font-size: 30px;
+}
+.polos{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 1100px;
+    align-items: center;
+    color: white;
+    
+}
+
+.cards{
+    display: flex;
+    margin-top: 10px;
+    width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: rgb(61, 61, 196) ;
+}
+
+.polo-img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.subtitulo-card{
+    padding: 10px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: -20px;
+    position: relative;
+    background-color:#3b4558 ;
+    border-radius: 10px;
+}
+
+.polo-description{
+    padding: 10px;
+}
+
+.btn-comprar{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3b4558;
+    color: #1d2535;
+    width: 150px;
+    border: 3px solid rgb(11, 128, 106) ;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    transition: 0.5s;
+    background-color:rgb(11, 128, 106) ;
+}
+
+footer{
+    text-align: center;background-color:#3b4558;
+}
+    
+.container_footer{
+    width: 600px;
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactos{
+    text-align: left;
+}
+.bx{
+    font-size: 20px;
+    margin-right: 5px;
+}
